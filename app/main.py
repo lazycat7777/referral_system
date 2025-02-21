@@ -1,9 +1,9 @@
-import asyncio
 from fastapi import FastAPI
 from app.routes import users, referrals
 from app.database import init_db
 
 app = FastAPI()
+
 
 @app.on_event("startup")
 async def startup():
